@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>color: {{color}}</p>
+    <p>year: {{year}}</p>
+    <p>brande: {{brand}}</p>
+<table>
+    <trstyle="border: red 2px solid;">
+        <tdstyle="border: red 2px solid;">row</td><tdstyle="border: red 2px solid;">fibonachi</td>
+    </tr>
+
+    {% for item in fib %}
+    <tr style="border: red 2px solid;">
+       <td style="border: rgb(68, 0, 255) 2px solid;">{{forloop.counter}}</td> <td style="border: red 2px solid;">{{item}}</td>
+    </tr>
+
+    {% endfor %}
+</table>
+    
+   
+     <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="Name"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="family"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+</body>
+</html>
