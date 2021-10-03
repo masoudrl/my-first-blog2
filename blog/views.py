@@ -7,12 +7,12 @@ from django.shortcuts import redirect
 from django.contrib.auth.models import User
 def post_list(request):
     posts=Post.objects.all()
-    return render(request,'blog\post_list.html',{'posts':posts})
+    return render(request,'blog/post_list.html',{'posts':posts})
 def jm(request):
-    return render(request,'blog\jm.html',{})
+    return render(request,'blog/jm.html',{})
 def post_details(request,pk):
     post=get_object_or_404(Post,pk=pk)
-    return render(request,'blog\post_details.html',{'post':post})
+    return render(request,'blog/post_details.html',{'post':post})
 def post_new(request):
 
     if request.method == "POST":
